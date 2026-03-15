@@ -158,12 +158,14 @@ export default function App() {
       fontSize: isMobile ? "30px" : "40px",
       fontWeight: 800,
       letterSpacing: "-0.03em",
+      color: "#111827",
     },
     subtitle: {
       marginTop: "8px",
-      color: "#6b7280",
+      color: "#374151",
       fontSize: isMobile ? "14px" : "15px",
       lineHeight: 1.4,
+      fontWeight: 500,
     },
     dayTabs: {
       display: "grid",
@@ -216,6 +218,7 @@ export default function App() {
       margin: "0 0 14px 0",
       fontSize: isMobile ? "17px" : "18px",
       fontWeight: 700,
+      color: "#111827",
     },
     exerciseButton: (active) => ({
       width: "100%",
@@ -268,9 +271,10 @@ export default function App() {
       fontSize: isMobile ? "22px" : "26px",
       fontWeight: 800,
       lineHeight: 1.2,
+      color: "#111827",
     },
     muted: {
-      color: "#6b7280",
+      color: "#374151",
       fontSize: "14px",
       marginTop: "6px",
       lineHeight: 1.4,
@@ -293,7 +297,7 @@ export default function App() {
     setLabel: {
       fontSize: "14px",
       fontWeight: 700,
-      color: "#374151",
+      color: "#111827",
     },
     mobileInputs: {
       display: "grid",
@@ -308,11 +312,13 @@ export default function App() {
       padding: isMobile ? "14px 12px" : "12px 12px",
       fontSize: "14px",
       background: "#ffffff",
+      color: "#111827",
     },
     historyTitle: {
       margin: "26px 0 12px 0",
       fontSize: isMobile ? "17px" : "18px",
       fontWeight: 700,
+      color: "#111827",
     },
     historyItem: {
       border: "1px solid #e5e7eb",
@@ -323,17 +329,18 @@ export default function App() {
     },
     historyDate: {
       fontSize: "13px",
-      color: "#6b7280",
+      color: "#4b5563",
       marginBottom: "6px",
     },
     historyText: {
       fontSize: "14px",
       fontWeight: 600,
       lineHeight: 1.5,
+      color: "#111827",
     },
     empty: {
       fontSize: "14px",
-      color: "#6b7280",
+      color: "#4b5563",
       padding: "14px",
       border: "1px dashed #d1d5db",
       borderRadius: "16px",
@@ -345,8 +352,8 @@ export default function App() {
     <div style={styles.page}>
       <div style={styles.shell}>
         <div style={styles.header}>
-          <h1 style={styles.title}>Trainingslogger</h1>
-          <div style={styles.subtitle}>Schlicht, schnell und direkt für dein Push-Pull-Beine-Training.</div>
+          <h1 style={styles.title}>Push-Pull-Beine</h1>
+          <div style={styles.subtitle}>Trainingslogger</div>
           <div style={styles.dayTabs}>
             {Object.keys(PLAN).map((planDay) => (
               <button
